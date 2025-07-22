@@ -1,0 +1,6 @@
+@SneakX.API_HostAddress = http://localhost:5258
+
+GET {{SneakX.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

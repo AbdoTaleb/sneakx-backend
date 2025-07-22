@@ -1,0 +1,52 @@
+﻿# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Visual Studio files
+.vs/
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotCover
+.idea/.idea.DotSettings
+
+# Logs
+*.log
+
+# Database
+*.mdf
+*.ldf
+
+# Others
+*.dbmdl
+*.bak
+*.sql
+
+# Publish results
+publish/
