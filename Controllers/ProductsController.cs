@@ -25,9 +25,10 @@ namespace SneakX.API.Controllers
     decimal? minPrice,
     decimal? maxPrice,
     string? sortBy,
-    string? sortOrder,
-    int pageNumber = 1,
-    int pageSize = 10)
+    string? sortOrder
+    //int pageNumber = 1,
+    //int pageSize = 10)
+    )
         {
             var query = _context.Products.AsQueryable();
 
@@ -67,17 +68,17 @@ namespace SneakX.API.Controllers
             }
 
             // Count
-            var totalItems = await query.CountAsync();
-            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+            //var totalItems = await query.CountAsync();
+            //var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
 
             // Headers
-            Response.Headers.Add("X-Total-Count", totalItems.ToString());
-            Response.Headers.Add("X-Total-Pages", totalPages.ToString());
+            //Response.Headers.Add("X-Total-Count", totalItems.ToString());
+            //Response.Headers.Add("X-Total-Pages", totalPages.ToString());
 
             // Pagination
             var products = await query
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize)
+                //.Skip((pageNumber - 1) * pageSize)
+                //.Take(pageSize)
                 .ToListAsync();
 
             return Ok(products);
