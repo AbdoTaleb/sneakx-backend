@@ -18,16 +18,16 @@ namespace SneakX.API.Controllers
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts(
-    string? brand,
-    string? gender,
-    string? category,
-    string? search,
-    decimal? minPrice,
-    decimal? maxPrice,
-    string? sortBy,
-    string? sortOrder
-    //int pageNumber = 1,
-    //int pageSize = 10)
+        string? brand,
+        string? gender,
+        string? category,
+        string? search,
+        decimal? minPrice,
+        decimal? maxPrice,
+        string? sortBy,
+        string? sortOrder
+        //int pageNumber = 1,
+        //int pageSize = 10)
     )
         {
             var query = _context.Products.AsQueryable();
