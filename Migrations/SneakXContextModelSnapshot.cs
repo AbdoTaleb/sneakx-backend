@@ -9,7 +9,7 @@ using SneakX.API.Data;
 
 namespace SneakX.API.Migrations
 {
-    [DbContext(typeof(SneakXContext))]
+    [DbContext(typeof(AppDbContext))]
     partial class SneakXContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

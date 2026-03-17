@@ -6,11 +6,11 @@ namespace SneakX.API.Data.Seeders
 {
     public class ProductSeeder
     {
-        public static async Task SeedProductsAsync(SneakXContext context)
+        public static async Task SeedProductsAsync(AppDbContext context)
         {
             Console.WriteLine("🚀 Seeder started...");
 
-            // حذف كل المنتجات السابقة لتجربة البيانات الجديدة
+           
             await context.Products.ExecuteDeleteAsync();
 
             try

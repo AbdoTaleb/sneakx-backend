@@ -9,9 +9,9 @@ namespace SneakX.API.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-        private readonly SneakXContext _context;
+        private readonly AppDbContext _context;
 
-        public ProductsController(SneakXContext context)
+        public ProductsController(AppDbContext context)
         {
             _context = context;
         }

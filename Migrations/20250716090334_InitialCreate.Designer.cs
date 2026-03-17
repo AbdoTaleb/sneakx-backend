@@ -10,7 +10,7 @@ using SneakX.API.Data;
 
 namespace SneakX.API.Migrations
 {
-    [DbContext(typeof(SneakXContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20250716090334_InitialCreate")]
     partial class InitialCreate
     {
